@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from uw import parse
+import uw
 import requests
 import sys
 
@@ -11,4 +11,4 @@ def parse_html (url):
     return uw.parse(page.content)
 
 if __name__ == '__main__':
-    return parse_html(sys.argv[1])
+    print(parse_html(sys.argv[1]))
